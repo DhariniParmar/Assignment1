@@ -14,6 +14,8 @@
 		3F0AA4432007FA280082FF82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0AA4412007FA280082FF82 /* LaunchScreen.storyboard */; };
 		3F0AA44E2007FA280082FF82 /* Assignmnet1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AA44D2007FA280082FF82 /* Assignmnet1Tests.swift */; };
 		3F0AA4592007FA280082FF82 /* Assignmnet1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AA4582007FA280082FF82 /* Assignmnet1UITests.swift */; };
+		3FD13AF7201155170070A206 /* MathQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD13AF6201155170070A206 /* MathQuiz.swift */; };
+		3FD13AF9201162370070A206 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD13AF8201162370070A206 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3F0AA4542007FA280082FF82 /* Assignmnet1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignmnet1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0AA4582007FA280082FF82 /* Assignmnet1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignmnet1UITests.swift; sourceTree = "<group>"; };
 		3F0AA45A2007FA280082FF82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD13AF6201155170070A206 /* MathQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuiz.swift; sourceTree = "<group>"; };
+		3FD13AF8201162370070A206 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				3F0AA4382007FA280082FF82 /* AppDelegate.swift */,
 				3F0AA43A2007FA280082FF82 /* ViewController.swift */,
 				3F0AA43C2007FA280082FF82 /* Main.storyboard */,
+				3FD13AF8201162370070A206 /* AboutViewController.swift */,
 				3F0AA43F2007FA280082FF82 /* Assets.xcassets */,
 				3F0AA4412007FA280082FF82 /* LaunchScreen.storyboard */,
 				3F0AA4442007FA280082FF82 /* Info.plist */,
+				3FD13AF6201155170070A206 /* MathQuiz.swift */,
 			);
 			path = Assignmnet1;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			files = (
 				3F0AA43B2007FA280082FF82 /* ViewController.swift in Sources */,
 				3F0AA4392007FA280082FF82 /* AppDelegate.swift in Sources */,
+				3FD13AF9201162370070A206 /* AboutViewController.swift in Sources */,
+				3FD13AF7201155170070A206 /* MathQuiz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
