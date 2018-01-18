@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
+    // UI varibales declare
     @IBOutlet weak var signOperator: UILabel!
     @IBOutlet weak var firstOperand: UILabel!
     @IBOutlet weak var secondOperand: UILabel!
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var round: UILabel!
 
 
-
+    //varibale declare
     var first_Operand_Number: Int = 0
     var second_Operand_Number: Int = 0
     var number: Int = 0
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
 
     @IBAction func resultCheck(_ sender: UIButton) {
 
-
+        //calling all functions
         randomoperators()
         checkResultAndMessagePrint()
         generatedCorrectAnswer()
@@ -51,6 +51,8 @@ class ViewController: UIViewController {
     @IBAction func startOverbtn(_ sender: UIButton) {
 
         level.text = String(0)
+        round.text = String(0)
+        score.text = String(0)
         randomoperators()
     }
 
@@ -58,11 +60,13 @@ class ViewController: UIViewController {
     @IBAction func infobtn(_ sender: UIButton) {
     }
 
+    //random Number for operators
     func randomNumber() {
 
         number = Int(arc4random_uniform(4))
     }
 
+    //operators selctions
     func randomoperators() {
         randomNumber()
 
@@ -80,6 +84,7 @@ class ViewController: UIViewController {
             break
         }
 
+        //random number generation for Operands
         first_Operand_Number = Int(arc4random_uniform(10) + 1)
         firstOperand.text = "\(first_Operand_Number)"
         second_Operand_Number = Int(arc4random_uniform(10) + 1)
@@ -89,11 +94,10 @@ class ViewController: UIViewController {
 
     func conditionCheck() {
 
-
-
     }
 
-
+    //check function for answer
+    //correct answer by computer
     func generatedCorrectAnswer() {
 
         if number == 0 {
@@ -111,9 +115,8 @@ class ViewController: UIViewController {
         print(generatedAnswer)
     }
 
+    //check both answers and show result
     func checkResultAndMessagePrint() {
-
-
         let guess = resultShow.text
 
         if (guess == String(generatedAnswer)) {
@@ -123,15 +126,18 @@ class ViewController: UIViewController {
 
             alert.addAction(action)
             present(alert, animated: true, completion: nil)
+            //update count
             count += 1
             print(count)
+            //update score
             score.text = String(Int(score.text!)! + 5)
+            //update round
             round.text = String(Int(round.text!)! + 1)
-
-
 
         }
             else {
+            
+                //in-correct answer (message)
                 let alertTwo = UIAlertController(title: "RE-TRY", message: "Try Again", preferredStyle: .alert)
 
                 let actionTwo = UIAlertAction(title: "TRY AGAIN", style: .default, handler: nil)
@@ -141,6 +147,7 @@ class ViewController: UIViewController {
         }
     }
 
+    //for level change
     func changeLevelAndRound() {
 
         if(count == 4) {
